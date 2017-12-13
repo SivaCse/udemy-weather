@@ -22,3 +22,24 @@ export function fetchWeather(city){
         payload:request
     };
 }
+
+export function createUser(user) {
+  return {
+      type:'CREATE_USER',
+      payload:user
+  };
+}
+
+export function updateUser(id,data) {
+  return {
+      type:'UPDATE_USER',
+      payload:{id,data}
+  };
+}
+
+export function selectedUser(user) {
+  return {
+      type:'SELECTED_USER',
+      payload:user
+  };
+}
